@@ -7,7 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class Controller {
 	@GetMapping("")
 	public String welcome() {
-		return "Welcome";
+		return "Welcome to the page";
+	}
+	@GetMapping("/help")
+	public String help() {
+		return "You are in help page";
 	}
 
 }
