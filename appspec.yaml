@@ -3,9 +3,9 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:111222333444:task-definition/my-task-definition-family-name:1"
+        TaskDefinition: "arn:aws:ecs:ap-south-1:555918697305:task-definition/aws-deploy:3"
         LoadBalancerInfo:
-          ContainerName: "SampleApplicationName"
-          ContainerPort: 80
+          ContainerName: "aws-deploy"
+          ContainerPort: 8000
 
         PlatformVersion: "LATEST"
